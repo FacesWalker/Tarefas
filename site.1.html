@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Site Segundo Mundo</title>
+	</head>
+	<body>
+		<form id="formato">
+			<legend>Cadastro</legend><br>
+			<fieldset id="dados-pessoais">
+				<legend>Dados Pessoais</legend>
+				<label for="nome">Nome:</label><br>
+				<input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
+				<br>
+				<label for="email">Email:</label><br>
+				<input type="text" name="email" id="email" required placeholder="Digite seu email">
+				<br>
+				<label for="data">Data de Nascimento</label><br>
+				<input type="date" name="data" id="data" min="1900-01-01" max="2021-12-31">
+				<br>
+				<label for="sexo">Escolha o sexo:</label><br>
+				<input type="radio" name="sexo" value="m">Masculino<br>
+				<input type="radio" name="sexo" value="f">Feminino<br>
+			</fieldset>
+			<br>
+			<fieldset id="registro">
+				<legend>Registro</legend>
+				<label for="cidade">Cidade:</label><br>
+				<select name="cidade" id="cidade">
+					<option disabled="disabled" selected="">Selecione</option>
+					<option value="1">Santos</option>
+					<option value="2">São Vicente</option>
+					<option value="3">Guarujá</option>
+					<option value="4">Bertioga</option>
+					<option value="5">Praia Grande</option>
+					<option value="6">Mongaguá</option>
+					<option value="7">Itanhaém</option>
+					<option value="8">Peruíbe</option>
+				</select>
+				<br>
+				<label for="endereco">Endereço:</label><br>
+				<input type="text" name="endereco" id="endereco" required placeholder="Av.">
+				<br>
+				<label for="numero">Número:</label><br>
+				<input type="text" name="numero" id="numero" required placeholder="Número">
+				<br>
+				<label for="telefone">Telefone:</label><br>
+				<input type="text" name="telefone" id="telefone" required placeholder="Telefone/Celular">
+				<br>
+				<label for="cep">CEP:</label><br>
+				<input type="text" name="cep" id="cep" required placeholder="ex.000000">
+				<br>
+				<label for="bairro">Bairro:</label><br>
+				<input type="text" name="bairro" id="bairro" required placeholder="Bairro da cidade">
+			</fieldset>
+			<br>
+			<fieldset id="modelos">
+				<legend>Modelos e Marcas</legend>
+				<label for="interesse">Selecione seus interesses:</label><br>
+				<input type="checkbox" name="interesses[]" value="infantil">Infantil<br>
+				<input type="checkbox" name="interesses[]" value="pequena">Pequena<br>
+				<input type="checkbox" name="interesses[]" value="media">Media<br>
+				<input type="checkbox" name="interesses[]" value="grande">Grande<br>
+				<input type="checkbox" name="interesses[]" value="larga">Larga<br>
+				<br>
+				<label for="marca">Marca:</label><br>
+				<select name="marca" id="marca">
+					<option disabled="disabled" selected="">Selecione</option>
+					<option value="1">Pulma</option>
+					<option value="2">Quiksilver</option>
+					<option value="3">Lacoste</option>
+					<option value="4">Nike</option>
+					<option value="5">Adidas</option>
+				</select>
+			</fieldset>
+		<input type="submit" value="Enviar">
+		</form>
+		<style>
+			body{
+				background-color: lightyellow;
+				font-family: Arial;
+			}
+			fieldset{
+				width: 45%;
+			}
+			form{
+				color: red;
+			}
+			#dados-pessoais{
+				background-color: lightgreen;
+			}
+			#registro{
+				background-color: white;
+			}
+			#modelos{
+				background-color: lightblue;
+			}
+			legend{
+				color: black;
+				font-size: 15pt;
+			}
+			label{
+				color: black;
+				font-size: 12pt;
+			}
+			input, select{
+				margin-bottom: 10px;
+			}
+			input[value=text]{
+				color: green;
+			}
+
+		</style>
+	</body>
+</html>
